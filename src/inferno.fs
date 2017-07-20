@@ -9,7 +9,7 @@ module Program =
     open Fable.Import.Browser
 
     /// Setup rendering of root React component inside html element identified by placeholderId
-    let withReact placeholderId (program:Elmish.Program<_,_,_,_>) =
+    let withInferno placeholderId (program:Elmish.Program<_,_,_,_>) =
         let mutable lastRequest = None
         let setState model dispatch =
             match lastRequest with
