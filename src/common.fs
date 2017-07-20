@@ -1,4 +1,4 @@
-namespace Elmish.React
+namespace Elmish.Inferno
 
 open System
 open Fable.Core

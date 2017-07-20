@@ -1,4 +1,4 @@
-namespace Elmish.React
+namespace Elmish.Inferno
 
 open System
 open Fable.Inferno
@@ -8,7 +8,7 @@ open Fable.Core
 module Program =
     open Fable.Import.Browser
 
-    /// Setup rendering of root React component inside html element identified by placeholderId
+    /// Setup rendering of root Inferno component inside html element identified by placeholderId
     let withInferno placeholderId (program:Elmish.Program<_,_,_,_>) =
         let mutable lastRequest = None
         let setState model dispatch =
